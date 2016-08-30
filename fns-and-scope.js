@@ -11,6 +11,7 @@ function isTyler(name) {
   return false;
 }
 
+//G: Perfecto;
 
 //////////////////PROBLEM 2////////////////////
 
@@ -22,6 +23,8 @@ function getName () {
   return name;
 }
 
+//G: You could simplify this down to just:
+//G: return prompt("What is your name?");
 
 //////////////////PROBLEM 3////////////////////
 
@@ -30,12 +33,13 @@ function getName () {
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-  //
 
 function welcome(){
   var name = getName();
   alert('Welcome, ' + name);
 }
+
+//G: Perfecto;
 
 //////////////////PROBLEM 4////////////////////
 
@@ -48,6 +52,9 @@ function welcome(){
     //arguments are the things being asked for something to be given to it?
     //paramaters are the things that are give to the arguments?
 
+//G: A parameter is the variable which is part of the function’s signature (function declaration).
+//G: Arguments are what you pass into a function for those parameters when the function is invoked.
+//G: It's an easy concept to understand but articulating it is a little bit harder.
 
 //////////////////PROBLEM 5////////////////////
 
@@ -65,6 +72,7 @@ function welcome(){
     ""
     */
 
+//G: Nice. Perfect.
 
 //////////////////PROBLEM 6////////////////////
 
@@ -76,17 +84,21 @@ function welcome(){
   function myName() {
     return 'Alan';
   }
-
+//G: That's an easy one :)
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
   var newMyName = myName;
+  
+  //G: Yep!
 
 //Now alert the result of invoking newMyName
 
   alert(newMyName());
+  
+  //G: Got it.
 
 //////////////////PROBLEM 7////////////////////
 
@@ -100,10 +112,18 @@ function welcome(){
       return 'Alan';
     }
   }
+  //G: Exactly right!
+
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
   var innerFn = outerFn();
-
+  //G: Yep!
 //Now invoke innerFn.
+
+//G: Oh no you forgot to invoke innerFn! Don't worry, I got you.
+
+innerFn();
+
+//G: :)
